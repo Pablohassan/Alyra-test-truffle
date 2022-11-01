@@ -6,7 +6,7 @@ Test Truffle
 
 #Tests des fonctions de base du contract Voting.sol
 
- # AddVoter() : Permet de rajouter une address dans la whitelist Add Proposal (ne fonctionne pas)
+    AddVoter() : Permet de rajouter une address dans la whitelist Add Proposal (ne fonctionne pas)
     addProposal()  : Permet d'jouter une proposition  aux votants enregistrés
     setVote() : Prends en compte un vote et une proposition
 
