@@ -4,7 +4,7 @@
 Test Truffle 
 
 
-#Tests des fonctions de base du contract Voting.sol
+# Tests des fonctions de base du contract Voting.sol
 
     AddVoter() : Permet de rajouter une address dans la whitelist Add Proposal (ne fonctionne pas)
     addProposal()  : Permet d'jouter une proposition  aux votants enregistrés
@@ -16,19 +16,15 @@ Test Truffle
     Should register Proposal: Premet de recuperer l'event ProposalRegistered
 
 # Test revert de addVoter 
-     Should Revert if sender is not the owner: On s' assure que seul le owner peut ajouter un Votant
+    Should Revert if sender is not the owner: On s' assure que seul le owner peut ajouter un Votant
     Should Revert if Already registered: Permet de verifier si le voter a été enregistré par le owner
     Should Revert if WorkflowStatus is not RegisteringVoters : Permet de s'assurer de la bonne phase du vote 
 
-
-
-
-Contract: Voting
    # Test functions principales
     ✓ Should register Voters, get event VoterRegistered  (62ms, 100440 gas)
      ✓ Should add voter proposal (78ms, 154264 gas)
      ✓ Should setVote  (123ms, 214286 gas)
-     test addVoter revert
+   # Test addVoter revert
       ✓ Revert if sender is not the owner  (283ms)
       ✓ Revert if Voter is Already registered (37ms, 50220 gas)
       ✓ Revert if WorkflowStatus is not RegisteringVoters (2ms)
